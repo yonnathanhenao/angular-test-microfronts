@@ -1,27 +1,42 @@
-# AngularTestMicrofronts
+Native Federation Testing for Angular Microfrontends
+====================================================
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+This project delves into the advanced implementation of microfrontends using Angular 17, coupled with the power of Native Federation. Its primary purpose is to demonstrate the viability and best practices for building a robust and scalable microfrontend architecture.
 
-## Development server
+Getting Started
+---------------
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Developed with Angular 17, this project serves as a testing ground for integrating multiple microfrontends into a cohesive application.
 
-## Code scaffolding
+### Development Server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To start the development server for the root:
 
-## Build
+`ng serve root`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+For the authentication microfrontend, run:
 
-## Running unit tests
+`ng serve authentication`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Navigate to [http://localhost:4200/](http://localhost:4200/) to see the root in action. Each microfrontend will be served on its respective route, demonstrating effective integration and isolation among them.
 
-## Running end-to-end tests
+### Project Structure
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The project is primarily divided into two parts:
 
-## Further help
+*   **Root**: The main entry point coordinating the loading and presentation of microfrontends.
+    
+*   **Authentication**: A microfrontend dedicated to authentication functionality, showcasing the capability to develop, test, and deploy features independently within the broader ecosystem.
+    
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Building the Project
+
+To build any part of the project, use:
+
+`ng build root` or `ng build authentication`
+
+This will compile the source code and store the build artifacts in the **dist/** directory.
+
+### More Information
+
+This project is a starting point for those interested in the microfrontend architecture with Angular.
